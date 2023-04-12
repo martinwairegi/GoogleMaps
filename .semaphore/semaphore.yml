@@ -6,11 +6,10 @@ agent:
     os_image: ubuntu2004
 blocks:
   - name: 'Block #1'
+    dependencies: []
     task:
       secrets:
-        - name: google-maps-api-key
+        - name: GOOGLE_MAPS_API_KEY
       jobs:
         - name: 'Job #1'
-          commands:
-            - checkout
-            - echo "My Google Maps API key is $GOOGLE_MAPS_API_KEY"
+          commands: []
